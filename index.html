@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title></title>
+
+		<link rel="stylesheet" href="./dist/reveal.css">
+		<link rel="stylesheet" href="./dist/theme/black.css" id="theme">
+
+    <link rel="stylesheet" href="./plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+        <section 
+          data-markdown 
+          data-separator="^---$" 
+          data-separator-vertical="^--$" 
+          data-separator-notes="^Notes:">
+          
+          <script type="text/template">
+
+<!-- .slide: data-background-image="./data.png" data-background-opacity="0.2" data-background="#222" -->
+
+## Social Science Reasearch Data Management
+
+<br>
+
+### 25 April 2022
+
+<br>
+
+#### John D. Martin III
+
+<br><br>
+
+[Link to PDF handout](./handout.pdf)
+
+Notes:
+
+Setup - You are a team of social scientists from several different disciplines including sociology, information science, education, computer science, and psychology. You are in the process of writing a grant application to study remote learning practices and outcomes for university students at all levels, undergraduate and graduate. Your team projects collecting using a variety of methods resulting in an array of different forms of data including semi-structure interviews, focus groups, survey responses, scraped social media posts. Your team has decided to prioritize open science practices, but you do not have a shared platform of practices and expectations for this because of the interdisciplinay character of your group. You have decided to consult with people who specialize in data management and curation to support your efforts. I am one of those people.
+
+---
+
+## Overview
+
+1. Decisions, decisions 
+2. Lifecycle
+3. Sensitive data
+4. Developing documentation
+5. Where to start and what to use?
+
+Notes:
+
+Here is an overview of what I will be discussing briefly with you today. In addition to this slide, there is a handout available, linked from on the first slide that provides some questions to consider and a list of useful links and references to help you become oriented in thinking about data curation.
+
+---
+
+## Decisions, decisions...
+
+Notes:
+
+The process of data management, archiving, and curation doesn't begin after you have collected your data and want to deposit it somewhere because your granting agency or university or target journal demands it, but well before. Whether you know it or not, you are already engaged in that process. Everything comes down to decisions that you either consider and make or don't consider and are left to someone else. The former is generally better all around.
+
+--
+
+## Who are we and what do we need?
+
+Notes:
+
+You are an interdisciplinary team of social scientists working on a shared research program related to remote learning practices and outcomes. Your needs are driven in part by your individual disciplinary conventions and practices, but also by the nature of your collaboration and the variety of forms your data can and will take.
+
+---
+
+## Data lifecycle
+
+### In the beginning...
+
+Notes:
+
+You might not think of your data as having a lifecycle, but it does. It starts right now, as you are working through the design of various components of your study or studies. The earlier you incorporate thinking about this lifecycle, the better. We're going to go through some questions to help you begin working data management into your research practice as a team and then talk about some tools that you can begin using immediately to help you with this.
+
+--
+
+### Where does it end? 
+
+Notes:
+
+The end goal for your research, of course, is publication of findings and results, but since you have chosen to incorporate planning for data curation, this is not the final resting place of your data. Your data is going to live on and become accessible to other researchers for secondary analysis, verification of results, reproducibility studies, inspiration for further research, and as a model for research practice, among other things.
+
+--
+
+### What do we have to consider? 
+
+Notes:
+
+You will have different needs for your data now, at the beginning of your project, than you will later, at the end and after. We need to think through some of the constraints that are or must be placed on your data, and how a curation and management workflow will take those into consideration. What will the short- and long-term access policies and restrictions be? What can be shared publicly and what might require permissions?
+
+--
+
+### What are the ethical considerations and constraints?
+
+Notes:
+
+These constraints are governed by the IRB overseeing your study. You will be collecting and producing data that makes your research subjects potentially identifiable. Protecting your subjects from deductive disclosure is critical not just as you collect and analyze the data, but also as you archive and manage it further down the line.
+
+--
+
+### Are there legal and policy constraints?
+
+Notes:
+
+Given that you are working with students at universities, your research data may be subject to FERPA and other institutional policy constraints. This might make it sound like I am primarily concerned with managing institutional liability, but policies related to student information exist to protect students, and that should be on our minds even and especially when we are considering what to do with the data that we collect from them.
+
+--
+
+### Who will benefit from sharing your data? 
+
+Notes:
+
+I mentioned some of the ways that your data might be used in the future by other researchers. Try to imagine some specific scenarios and people who may find your data useful. Try to imagine how they might use it and what they will need in order to do so.
+
+--
+
+### What are the costs involved?
+
+Notes:
+
+Spoiler alert - everything has a cost, both short and long term. Labor is likely a large part of that cost. Early planning for data management can help you anticipate those costs so that you can incorporate them into your budgets from day one. This way you will not be scrambling at the end of your funding cycle to find a budget to fulfil your data-related obligations to various stakeholders involved. Assessing and determining your needs now will save you a lot of time and money in the long run.
+
+---
+
+## Managing sensitive data
+
+Notes:
+
+I am not going to rehash the questions that come from the IRB regarding the storage and handling of sensitive data or data that contains personal identifiers. Instead, I will ask you to thnk about how these fit into the longer term goal of organizing and managing your data once you have begun archiving it.
+
+--
+
+## What tools are needed?
+
+Notes:
+
+"Tools" here can be broadly construed as everything you might use to clean, analyze, and store your data? How can we design these tools so that they might be archived and preserved along with the data itself?
+
+--
+
+## IRB considerations?
+
+Notes:
+
+If you are incorporating data managers onto your research team (and you should), will they need to be added to your IRB? The simple answer is: if they are going to have access to your raw data that includes identifiers: probably. Ask your IRB officer. 
+
+--
+
+## Can ingest of sensitive data be automated?
+
+Notes:
+
+As you are considering your plans for the structure of your studies and the types of data produced, think early about how the end result will affect the design of a workflow for ingesting it into an archive and storing it long term. 
+
+Automation is nice. It keeps us from doing the same tasks over and over again. And certain types of data cleaning and preparation are easier to automate than others. For example, cleaning up and deidentifying survey data can be readily scripted because of the structure of the data. This should be considered good practice as well, because it is a reproducible process, and it makes your deidentification less likely to be subject to human error.
+
+Social media data, for instance, are easily searched because the text is often publicly available and includes links that lead directly to posts, and user information.  
+
+Interview data, on the other hand, because it contains not only identifiers, but also a huge amount of context, will be much more difficult to automate and check, and will require human intervention to verify. 
+
+---
+
+# Documentation
+
+Notes:
+
+The most important thing that we can do from beginning to end in developing your data management plans is to create, maintain, update, and follow a set of documentation related to your research. 
+
+--
+
+## Metadata
+
+Notes:
+
+What is the data about your data? Codebooks, interaction logs, and other records that might be related to your data collection, the data itself, its analysis, and archiving should all be well-documented. Data forensics should not be required to understand the data ABOUT your data.
+
+--
+
+## Policies
+
+Notes:
+
+Who has access to what, and when? Do different people have different levels of access? What can be made publicly aceessible and what must be kept confidential? How long will the data be made available? Is there an embargo before data is made available? These are all questions that should be answered by your team's documentation.
+
+--
+
+## Workflows
+
+Notes:
+
+How was the data created? How was it analyzed? What are the specific procedures and steps taken in collecting, sorting, organizing, cleaning, and analyzing your data? These should all be demystified by your documentation.
+
+--
+
+## Version control
+
+Notes:
+
+There should be a record of the changes between one version of your work to the next. This does not only apply at the point of writing reports and publications, but also for the stages involved in cleaning and organizing your data. There should be a clear record from raw data through analysis to publication. Version control is the key to this.
+
+--
+
+## Reproducibility
+
+Notes:
+
+The goal of all of this documentation is that some other researcher might be able to take your data (or even your entire study design) and attempt to replicate it in the same or a similar setting. BUT, perhaps more importantly, it is important that YOU be able to do this.
+
+---
+
+# Where to begin?
+
+Notes:
+
+In the handout, I have provided links to a few tools that you can use to get started. It is a short list, as I am not trying to overwhelm you, but I believe these to be critical in helping you to develop your data management practices so that you can meet your research goals. 
+
+--
+
+# OSF.io
+
+Notes:
+
+OSF is a free and open platform for researchers to share and collaborate. This is a good place to begin managing your team's internal documentation and planning and will be useful both for when you need to onboard new members of the team and also when you are in the process of closing out your project and moving your data into the archiving portion of its lifecycle.
+
+--
+
+# DMPTool
+
+Notes:
+
+The California Digital Library builds and maintains this tool to help you plan your data management. It is a GREAT place to start and will help you work through gathering the necessary information to successfully design and implement your vision for your data lifecycle.
+
+--
+
+# GitHub (and Git)
+
+Notes:
+
+Git is a tool for tracking changes and versions for sets of plaintext documents. GitHub is a platform built on git that allows you to manage information, scripts, and other documentation AND maintain a complete record of changes across the life of that information. It will be an incredibly useful tool and platform for you in managing your cleaning and analysis scripts, and may surprise you with its versatility in helping you manage your writing workflow as well.
+
+---
+
+<!-- .slide: data-background-image="./data.png" data-background-opacity="0.2" data-background="#222" -->
+
+# Thank you.
+
+Notes:
+
+---
+
+### Links:
+
+[Handout for this session](./handout.pdf)
+
+---
+          </script>
+        </section>
+      </div>
+		</div>
+
+		<script src="./dist/reveal.js"></script>
+        <script src="./plugin/markdown/markdown.js"></script>
+        <script src="./plugin/highlight/highlight.js"></script>
+        <script src="./plugin/notes/notes.js"></script>
+        <script src="./plugin/math/math.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+
+		</script>
+
+	</body>
+</html>
